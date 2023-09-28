@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../../images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  width: 50%;
+  padding: 5px;
+  max-width: 375px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px 20px;
+}
+main header h1 {
+  font-size: 2rem;
+  color: white;
+}
+main header .theme-switcher img {
+  width: 24px;
+}
+main .content .todo-add {
+  background: white;
+  padding: 9px 5px;
+  border-radius: 5px;
+}
+main .content .todo-add form {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  clear: both;
+  display: block;
+}
+main .content .todo-add form input {
+  border: none;
+  font-size: 0.8rem;
+  padding-left: 20px;
+  outline: none;
+  color: gray;
+}
+main .content .todo-add form .checkbox-label input {
+  display: none;
+}
+main .content .todo-add form .checkbox-label .check {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.3s all;
+  border: 0.4px solid hsl(233, 11%, 84%);
+}
+main .content .todo-add form .checkbox-label input:checked ~ .check {
+  background-color: white;
+}
+main .content .todo-add form .checkbox-label .check::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+}
+main .content .todo-add form .checkbox-label input:checked ~ .check::after {
+  transform: rotate(45deg) scale(1);
+  left: 5px;
+  top: 0.6px;
+  width: 3.6px;
+  height: 9.5px;
+  border: solid red;
+  border-width: 0 3px 3px 0;
+  border-radius: 1.6px;
+}
+main .content .todo-container {
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 5px;
+}
+main .content .todo-container .todo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 24px;
+}
+main .content .todo-container .todo-label {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 25px;
+}
+main .content .todo-container .todo-label input {
+  display: none;
+}
+main .content .todo-container .todo-label .check {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.3s all;
+  border: 0.4px solid hsl(233, 11%, 84%);
+}
+main .content .todo-container .todo-label input:checked ~ .check {
+  background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+main .content .todo-container .todo-label .check::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+}
+main .content .todo-container .todo-label input:checked ~ .check::after {
+  transform: rotate(45deg) scale(1);
+  left: 5px;
+  top: 0.6px;
+  width: 3.6px;
+  height: 9.5px;
+  border: solid hsl(236, 33%, 92%);
+  border-width: 0 3px 3px 0;
+  border-radius: 1.6px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
